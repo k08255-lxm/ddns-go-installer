@@ -15,9 +15,9 @@
 - 提供系统服务管理菜单
 - 自动处理依赖安装
 
-## 准备工作
+## 🚀快速安装
 
-### 安装curl下载工具
+### 安装curl
 ```bash
 # Debian/Ubuntu
 sudo apt update && sudo apt install -y curl
@@ -29,7 +29,6 @@ sudo yum install -y curl
 sudo dnf install -y curl
 ```
 
-## 安装步骤
 
 ### 下载安装脚本
 ```bash
