@@ -43,11 +43,11 @@ sudo bash install.sh
 ## 使用说明
 
 1. 首次运行完成安装后，访问：
-   `http://你的服务器IP:9876`
+   `http://你的服务器IP:你自定义的端口` *（这些信息在首次安装后会自动输出）*
 
 2. 后续管理命令：
 ```bash
-sudo ./install.sh  # 启动管理菜单
+sudo bash install.sh  # 启动管理菜单
 ```
 
 ## 管理功能
