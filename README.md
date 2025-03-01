@@ -19,23 +19,18 @@
 ### 安装wget下载工具
 ```bash
 # Debian/Ubuntu
-sudo apt update && sudo apt install -y wget
+sudo apt update && sudo apt install -y curl
 
 # CentOS/RHEL
-sudo yum install -y wget
+sudo yum install -y curl
 
 # Fedora
-sudo dnf install -y wget
+sudo dnf install -y curl
 ```
 
 ## 安装步骤
 
 ### 下载安装脚本
-```bash
-wget https://raw.githubusercontent.com/k08255-lxm/ddns-go-installer/main/install.sh
-```
-
-或使用curl：
 ```bash
 curl -O https://raw.githubusercontent.com/k08255-lxm/ddns-go-installer/main/install.sh
 ```
