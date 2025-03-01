@@ -1,8 +1,9 @@
 # DDNS-Go 一键安装脚本
 
-[![GitHub Release](https://img.shields.io/github/v/release/yourname/ddns-go-installer)](https://github.com/yourname/ddns-go-installer/releases)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![CI](https://github.com/k08255-lxm/ddns-go-installer/actions/workflows/ci.yml/badge.svg)](https://github.com/k08255-lxm/ddns-go-installer/actions)
+[![GitHub Release](https://img.shields.io/github/v/release/k08255-lxm/ddns-go-installer)](https://github.com/k08255-lxm/ddns-go-installer/releases)
+[![Last Commit](https://img.shields.io/github/last-commit/k08255-lxm/ddns-go-installer)](https://github.com/k08255-lxm/ddns-go-installer/commits/main)
+[![Code Style](https://img.shields.io/badge/code%20style-shellscript-yellowgreen)](https://www.shellcheck.net)
+[![License](https://img.shields.io/github/license/k08255-lxm/ddns-go-installer)](https://github.com/k08255-lxm/ddns-go-installer/blob/main/LICENSE)
 
 
 本脚本用于快速部署 [jeessy2/ddns-go](https://github.com/jeessy2/ddns-go) 动态域名解析服务，适配主流Linux发行版。
@@ -16,7 +17,7 @@
 
 ## 准备工作
 
-### 安装wget下载工具
+### 安装curl下载工具
 ```bash
 # Debian/Ubuntu
 sudo apt update && sudo apt install -y curl
