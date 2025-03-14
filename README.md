@@ -1,77 +1,72 @@
 # DDNS-Go 一键安装脚本
 
 [![GitHub Release](https://img.shields.io/github/v/release/k08255-lxm/ddns-go-installer)](https://github.com/k08255-lxm/ddns-go-installer/releases)
-[![Last Commit](https://img.shields.io/github/last-commit/k08255-lxm/ddns-go-installer)](https://github.com/k08255-lxm/ddns-go-installer/commits/main)
-[![Code Style](https://img.shields.io/badge/code%20style-shellscript-yellowgreen)](https://www.shellcheck.net)
-[![License](https://img.shields.io/github/license/k08255-lxm/ddns-go-installer)](https://github.com/k08255-lxm/ddns-go-installer/blob/main/LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/k08255-lxm/ddns-go-installer?style=flat-square)](https://github.com/k08255-lxm/ddns-go-installer/commits/main)
+[![License](https://img.shields.io/github/license/k08255-lxm/ddns-go-installer)](LICENSE)
+[![Shell Check](https://img.shields.io/badge/shellcheck-passed-brightgreen)](https://www.shellcheck.net)
 
+> 本项目用于快速部署和管理 [jeessy2/ddns-go](https://github.com/jeessy2/ddns-go) 动态域名解析服务，支持主流Linux发行版和FreeBSD系统。
 
-本脚本用于快速部署 [jeessy2/ddns-go](https://github.com/jeessy2/ddns-go) 动态域名解析服务，适配主流Linux发行版。
+---
 
-## 功能说明
+## 📦 功能特性
 
-- 自动安装 [DDNS-Go](https://github.com/jeessy2/ddns-go)
-- 交互式配置端口、同步间隔
-- 提供系统服务管理菜单
-- 自动处理依赖安装
+- **全自动部署** - 自动检测系统架构，下载最新版本
+- **智能检测** - 支持识别通过其他方式安装的DDNS-Go
+- **服务管理** - 提供启动/停止/重启等系统服务控制
+- **关闭web面板** - 可禁用Web界面降低资源使用
+- **自动更新** - 支持脚本自更新和程序更新
+- **多架构支持** - 兼容x86_64/ARMv6/ARMv7/ARM64架构
+- **防火墙提示** - 自动生成防火墙配置建议
 
-## 🚀快速安装
+---
 
-### 安装curl
+## 🚀 快速安装
+
+### 环境要求
+- Linux / FreeBSD 系统
+- Bash 4.0+ 环境
+- root权限
+
+### 安装命令
 ```bash
-# Debian/Ubuntu
-sudo apt update && sudo apt install -y curl
-
-# CentOS/RHEL
-sudo yum install -y curl
-
-# Fedora
-sudo dnf install -y curl
-```
-
-
-### 下载安装脚本
-```bash
+# 下载安装脚本
 curl -O https://raw.githubusercontent.com/k08255-lxm/ddns-go-installer/main/install.sh
-```
 
-### 运行安装程序
-```bash
+# 执行安装
 sudo bash install.sh
 ```
 
-## 使用说明
+---
 
-1. 首次运行完成安装后，访问：
-   `http://你的服务器IP:你自定义的端口` *（这些信息在首次安装后会自动输出）*
+## 🛠 管理菜单
 
-2. 后续管理命令：
+安装完成后，通过以下命令启动管理界面：
 ```bash
-sudo bash install.sh  # 启动管理菜单
+ddnsmgr
 ```
 
-## 管理功能
+### 菜单功能
+```
+▌DDNS-GO 管理菜单 v1.1.0
+1. 启动服务      2. 停止服务
+3. 重启服务      4. 切换Web界面状态
+5. 查看状态      6. 更新程序
+7. 卸载程序      8. 退出
+```
 
-1. 启动服务
-2. 停止服务
-3. 重启服务
-4. 查看状态
-5. 查看配置
-6. 卸载程序
+---
 
+## ⚠️ 注意事项
 
-## 项目特点
+1. 建议在防火墙中开放对应端口
+3. Web界面默认启用，可通过菜单选项4关闭
+4. 动态IP用户请尽快完成域名解析配置
 
-✅ 全自动版本检测  
-✅ 中文兼容  
-✅ 系统服务集成  
-✅ 配置持久化存储
+---
 
-## 许可证
+## 📜 许可证
 
-[MIT License](LICENSE) © 2025 k08255-lxm
+[MIT License](LICENSE) © 2024 k08255-lxm
 
-## 相关项目
-
-[jeessy2/ddns-go](https://github.com/jeessy2/ddns-go) 
-
+---
