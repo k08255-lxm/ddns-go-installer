@@ -67,6 +67,6 @@ ddnsmgr
 
 ## 📜 许可证
 
-[MIT License](LICENSE) © 2024 k08255-lxm
+[MIT License](LICENSE) © 2025 k08255-lxm
 
 ---
